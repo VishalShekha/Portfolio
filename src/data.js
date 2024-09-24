@@ -1,6 +1,6 @@
 // src/data.js
 const personalData = {
-    name: "Vishal S",
+    name: "Vishal Shekha",
     email: "your.email@gmail.com",
     tagline: "It's here",
     socialLinks: {
@@ -23,6 +23,12 @@ const personalData = {
       },
       {
         title: "Project 3",
+        description: "Description of project 3.",
+        githubLink: "https://github.com/yourusername/project3",
+        liveLink: "https://yourliveproject3.com",
+      },
+      {
+        title: "Naman 3",
         description: "Description of project 3.",
         githubLink: "https://github.com/yourusername/project3",
         liveLink: "https://yourliveproject3.com",

@@ -12,7 +12,7 @@ const Home = ({ setLoading }) => {
   
   <Container>
     <Typography variant="h2">{personalData.name}</Typography>
-    <Typography variant="h5">Brief introduction or tagline</Typography>
+    <Typography variant="h5">{personalData.tagline}</Typography>
     <Button variant="contained" onClick={() => setLoading(false)}>Get Started</Button>
   </Container>
   );

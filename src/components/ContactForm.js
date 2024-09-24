@@ -1,5 +1,5 @@
 import React from 'react';
-import { TextField, Button } from '@mui/material';
+import { TextField, Button, Box } from '@mui/material';
 import { Formik } from 'formik';
 
 const ContactForm = () => (
@@ -11,10 +11,20 @@ const ContactForm = () => (
   >
     {({ handleChange, handleSubmit }) => (
       <form onSubmit={handleSubmit}>
-        <TextField label="Name" name="name" onChange={handleChange} fullWidth />
-        <TextField label="Email" name="email" type="email" onChange={handleChange} fullWidth />
-        <TextField label="Message" name="message" multiline rows={4} onChange={handleChange} fullWidth />
-        <Button type="submit" variant="contained">Send</Button>
+        <Box sx={{ mb: 2 }}>
+          <TextField label="Name" name="name" onChange={handleChange} fullWidth />
+        </Box>
+        <Box sx={{ mb: 2 }}>
+          <TextField label="Email" name="email" type="email" onChange={handleChange} fullWidth />
+        </Box>
+        <Box sx={{ mb: 2 }}>
+          <TextField label="Message" name="message" multiline rows={4} onChange={handleChange} fullWidth />
+        </Box>
+        
+        {/* Align Button to the right */}
+        <Box sx={{ display: 'flex', justifyContent: 'flex-end' }}>
+          <Button type="submit" variant="contained">Send</Button>
+        </Box>
       </form>
     )}
   </Formik>
